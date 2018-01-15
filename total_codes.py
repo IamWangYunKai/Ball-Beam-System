@@ -14,7 +14,7 @@ import pprint as pp
 from collections import deque
 import random
 
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 class ReplayBuffer(object):
 
@@ -502,7 +502,7 @@ if __name__ == '__main__':
     f2 = open('step.txt', "w+")
     main(args)
     t = [i for i in range(len(rwd))]
-    plt.plot(t, rwd)
-    plt.plot(t, max_step)
+    #plt.plot(t, rwd)
+    #plt.plot(t, max_step)
     f.close()
     f2.close()
